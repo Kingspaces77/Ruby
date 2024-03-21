@@ -3,13 +3,22 @@ source "https://rubygems.org"
 ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+<<<<<<< HEAD
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
+=======
+gem "rails", "~> 7.1.3"
+>>>>>>> 4a860deb19dd956125cb28dc6266a72d1955d62c
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+<<<<<<< HEAD
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
+=======
+# Use postgresql as the database for Active Record
+gem "pg", "~> 1.1"
+>>>>>>> 4a860deb19dd956125cb28dc6266a72d1955d62c
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"

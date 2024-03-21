@@ -10,16 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.1].define(version: 2024_03_18_221325) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.string "string"
     t.string "body"
     t.string "text"
+=======
+ActiveRecord::Schema[7.1].define(version: 2024_03_09_230437) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "cars", force: :cascade do |t|
+    t.string "make"
+    t.string "model"
+    t.integer "year"
+>>>>>>> 4a860deb19dd956125cb28dc6266a72d1955d62c
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "comments", force: :cascade do |t|
     t.string "commenter"
     t.text "body"
@@ -30,4 +42,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_18_221325) do
   end
 
   add_foreign_key "comments", "articles"
+=======
+>>>>>>> 4a860deb19dd956125cb28dc6266a72d1955d62c
 end
